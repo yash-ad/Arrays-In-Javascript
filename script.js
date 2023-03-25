@@ -29,7 +29,31 @@ console.log(myArray);
 console.log(newArray);
 
 
-const fruits = ["Apple","Mango","Banana","Strawberry","Pineapple"];
-console.log(fruits);
-console.log(fruits[3]);
 
+
+
+
+
+const fruits = ["Apple","Mango","Banana","Strawberry","Pineapple","Banana"];
+console.log(fruits);
+
+////Common Array methods with examples:-
+///1.Indexof() :- This method represents as searches an element of an array and returns its position.
+//In this below example as you can see in the fruits section there are two bananas element on which the postions are 2 & 5 however javascript will identify only first element to access it. 
+console.log(fruits.indexOf("Banana"));
+console.log(fruits.indexOf("Pineapple"));
+
+//In this below example as you can see in the fruits section cherry is not present as an element
+//And if element is not present the output will get -1.
+console.log(fruits.indexOf("Cherry"));
+
+
+
+///2.Includes() :- This method represents as checks if an array conatins a specified element,with the help of boolean value it returns either True or False.
+console.log(fruits.includes("Banana"));//True,yes it is available and its represents as an element. 
+console.log(fruits.includes("Chikoo"));//False,No its not since absence of an element.
+
+
+///3.Push() :- This method represents adds a new element to the end of an array and returns the new length of an array.
+console.log(fruits.push("Kiwi"));
+console.log(fruits);
