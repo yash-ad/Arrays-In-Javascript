@@ -32,12 +32,14 @@ console.log(newArray);
 
 
 
-
+////Ex.2
 
 const fruits = ["Apple","Mango","Banana","Strawberry","Pineapple","Banana"];
 console.log(fruits);
 
 ////Common Array methods with examples:-
+
+
 ///1.Indexof() :- This method represents as searches an element of an array and returns its position.
 //In this below example as you can see in the fruits section there are two bananas element on which the postions are 2 & 5 however javascript will identify only first element to access it. 
 console.log(fruits.indexOf("Banana"));
@@ -56,4 +58,89 @@ console.log(fruits.includes("Chikoo"));//False,No its not since absence of an el
 
 ///3.Push() :- This method represents adds a new element to the end of an array and returns the new length of an array.
 console.log(fruits.push("Kiwi"));
+console.log(fruits.push("Papaya"));
 console.log(fruits);
+
+
+
+///4.Unshift():- This method represents adds a new element to the beginning of an array and returns the new length of an array.
+console.log(fruits.unshift("Mango"));
+console.log(fruits.unshift("DragonFruit"));
+console.log(fruits);
+
+
+
+///5.Pop() :- This method shows as removes the last element of an array and returns the removed element.
+console.log(fruits.pop());
+console.log(fruits.pop());
+
+
+
+
+///5.Shift() :- This method shows as removes the first element of an array and returns the removed element.
+console.log(fruits.shift());
+console.log(fruits.shift());
+
+
+
+///6.Sorts() :- This method shows as sort the elements alphabetically in strings and in ascending order.
+console.log(fruits.sort());
+
+
+
+///7.Slice() :- This method shows as select the part of an array and returns a new array.
+
+const subArray = fruits.slice(2,5) //Inclusive starting element and exclusive end element.
+console.log(subArray);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
