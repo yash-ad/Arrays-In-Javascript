@@ -97,10 +97,10 @@ console.log(subArray);
 
 ///8.Join() :- This method represents as returns an array as string.
 
-const arry_One = fruits.join();
+const arry_1 = fruits.join();
 console.log(fruits);
-console.log(arry_One);
-console.log(typeof arry_One); //String
+console.log(arry_1);
+console.log(typeof arry_1); //String
 
 
 
@@ -110,7 +110,23 @@ console.log(fruits.splice(1,2));
 
 
 
-//Most important quiz the differenece between Slice or Splice :-
+//Most important quiz the differenece between Slice & Splice :-
+
+const numbers = [0 , 1 , 2 , 3 , 4 ,5 ]; //Original Array
+console.log(numbers);
+
+
+const array_One = numbers.slice(1,3); //Using slice
+console.log(array_One); // 1,2.
+
+
+const array_Two = numbers.splice(1,3); //Using splice
+console.log("Guess whats the output is :-",numbers); //0,4,5 which are remaining elements.
+console.log(array_Two); // 1,2,3.
+
+
+
+
 
 
 
