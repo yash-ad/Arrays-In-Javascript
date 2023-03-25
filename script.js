@@ -95,6 +95,23 @@ console.log(subArray);
 
 
 
+///8.Join() :- This method represents as returns an array as string.
+
+const arry_One = fruits.join();
+console.log(fruits);
+console.log(arry_One);
+console.log(typeof arry_One); //String
+
+
+
+///9.Splice() :- This method shows as adds new items to an array,The splice method can be used to add new items to an array.
+console.log(fruits);
+console.log(fruits.splice(1,2)); 
+
+
+
+//Most important quiz the differenece between Slice or Splice :-
+
 
 
 
