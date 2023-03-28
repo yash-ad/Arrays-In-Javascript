@@ -41,11 +41,11 @@ console.log(fruits);
 
 
 ///1.Indexof() :- This method represents as searches an element of an array and returns its position.
-//In this below example as you can see in the fruits section there are two bananas element on which the postions are 2 & 5 however javascript will identify only first element to access it. 
+//In this below example here you can see in the fruits section there are two bananas element on which the postions are 2 & 5 however javascript will identify only first element to access it. 
 console.log(fruits.indexOf("Banana"));
 console.log(fruits.indexOf("Pineapple"));
 
-//In this below example as you can see in the fruits section cherry is not present as an element
+//In this below example here you can see in the fruits section cherry is not present as an element
 //And if element is not present the output will get -1.
 console.log(fruits.indexOf("Cherry"));
 
@@ -89,9 +89,9 @@ console.log(fruits.sort());
 
 
 ///7.Slice() :- This method shows as select the part of an array and returns a new array.
-
-const subArray = fruits.slice(2,5) //Inclusive starting element and exclusive end element.
-console.log(subArray);
+console.log(fruits);
+const subArray_1 = fruits.slice(2,5) //Inclusive starting element and exclusive end element.
+console.log(subArray_1);//Banana,Mango,Pineapple
 
 
 
@@ -104,14 +104,15 @@ console.log(typeof arry_1); //String
 
 
 
-///9.Splice() :- This method shows as adds new items to an array,The splice method can be used to add new items to an array.
+///9.Splice() :-The splice() method adds and/or removes array elements,This method overwrites the original array.
 console.log(fruits);
-console.log(fruits.splice(1,2)); 
+const subArray_2 = fruits.splice(1,2);
+console.log(subArray_2); 
 
 
 
 //Most important quiz the differenece between Slice & Splice :-
-
+//1.
 const numbers = [0 , 1 , 2 , 3 , 4 ,5 ]; //Original Array
 console.log(numbers);
 
@@ -124,9 +125,17 @@ const array_Two = numbers.splice(1,3); //Using splice
 console.log("Guess whats the output is :-",numbers); //0,4,5 which are remaining elements.
 console.log(array_Two); // 1,2,3.
 
+//2.Here you will get a difference between slice and splice:-
+const vegetables = ["Spinach","Cabbage","Tomato","Potatao","Onion","Carrot","Capsicum"]
+console.log(vegetables); //Original array.
+
+const veggies_1 = vegetables.slice(1,3); //Using slice:- This method shows as select the part of an array and returns a new array.
+console.log(veggies_1);//On the index 1 & 2 is Cabbage and tomato , in this example inclusive is 1 and exclusive is 2 which before an ending element.
 
 
-
+const veggies_2 = vegetables.splice(1,3) //Using splice:-This method can be used to add new items to an array.
+console.log(vegetables); // So here is the difference the remainig part element of an array.
+console.log(veggies_2);// On the index
 
 
 
