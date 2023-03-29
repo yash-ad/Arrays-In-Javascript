@@ -150,10 +150,12 @@ console.log(greetings.shift()); //Removes the first element of an array.
 console.log(greetings.push("Hey")); //Add new element to the end of an array.
 console.log(greetings.unshift("Selamat")); //Add new element to the start of an array.
 console.log(greetings);
-
-
-
-
+console.log(greetings.pop()); // That means opposite of push , Removes the last element of an array and returns it.
+console.log(greetings.sort()); //Sort the elements alphabetically with an in ascending order.
+console.log(greetings.slice(2,5));//Select the part of an array and returns a new array with inclusive and exclusive.
+console.log(greetings.splice(1,3));//This method add / or removes element from the array
+console.log(greetings.join());
+console.log(greetings);
 
 
 
