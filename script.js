@@ -88,7 +88,7 @@ console.log(fruits.sort());
 
 
 
-///7.Slice() :- This method shows as select the part of an array and returns a new array.
+///7.Slice() :- This method shows as select the part of an array and returns a new array,The slice() method returns selected elements in an array, as a new array.The slice() method selects from a given start, up to a (not inclusive) given end.The slice() method does not change the original array.
 console.log(fruits);
 const subArray_1 = fruits.slice(2,5) //Inclusive starting element and exclusive end element.
 console.log(subArray_1);//Banana,Mango,Pineapple
@@ -133,12 +133,23 @@ const veggies_1 = vegetables.slice(1,3); //Using slice:- This method shows as se
 console.log(veggies_1);//On the index 1 & 2 is Cabbage and tomato , in this example inclusive is 1 and exclusive is 2 which before an ending element.
 
 
-const veggies_2 = vegetables.splice(1,3) //Using splice:-This method can be used to add new items to an array.
-console.log(vegetables); // So here is the difference the remainig part element of an array.
-console.log(veggies_2);// On the index
+const veggies_2 = vegetables.splice(1,3) //Using splice:- This method can be used to add / or remove elements to an array.
+console.log(vegetables); // So here is the difference the remaining part element of an array.
+console.log(veggies_2);// On the index 1 , 2 & 3 is Cabbage , tomato and potato
 
 
+const greetings = ["Hi","Hello","Namaste","Namaskar","Ramram"];
+console.log(greetings);
 
+greetings[5] = "Hola";
+console.log(greetings);
+console.log(greetings.length); //To check the length of an element
+console.log(greetings.indexOf("Namaste")); //Returns the index of value or an element
+console.log(greetings.includes("Teamo")); //Boolean value True or False.
+console.log(greetings.shift()); //Removes the first element of an array.
+console.log(greetings.push("Hey")); //Add new element to the end of an array.
+console.log(greetings.unshift("Selamat")); //Add new element to the start of an array.
+console.log(greetings);
 
 
 
