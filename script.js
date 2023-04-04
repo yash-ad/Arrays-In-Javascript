@@ -111,7 +111,7 @@ console.log(subArray_2);
 
 
 
-//Most important quiz the differenece between Slice & Splice :-
+//Most important quiz for interview find the differenece between Slice & Splice :-
 //1.
 const numbers = [0 , 1 , 2 , 3 , 4 ,5 ]; //Original Array
 console.log(numbers);
@@ -156,6 +156,28 @@ console.log(greetings.slice(2,5));//Select the part of an array and returns a ne
 console.log(greetings.splice(1,3));//This method add / or removes element from the array
 console.log(greetings.join());
 console.log(greetings);
+console.log(greetings[0]);
+console.log(greetings[1]);
+console.log(greetings[2]);
+
+
+  
+//Most important quiz for interview what is the length of an array?
+//2.
+greetings[40] = "Moshi-Moshi"
+console.log(greetings); // So here the total length is 41.
+
+
+//3.Guess the output
+
+const arr_ = ["A","B","C","D","E"];
+
+delete arr_[1];
+console.log(arr_.length); //5
+console.log(arr_); //The ouput is empty or undefined of postion 1 in the console,here the length will be of an original array is same.
+
+
+
 
 
 
