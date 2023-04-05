@@ -110,6 +110,51 @@ const subArray_2 = fruits.splice(1,2);
 console.log(subArray_2); 
 
 
+//Examples for array:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Most important quiz for interview find the differenece between Slice & Splice :-
 //1.
@@ -178,7 +223,13 @@ console.log(arr_); //The ouput is empty or undefined of postion 1 in the console
 
 
 
+//Js interview question for an array:-
 
+const cars = ["Tata","Mahindra","Hyundai","Suzuki"];
+cars.length = 4;
+ let b = cars[3];
+ console.log(b);
+ // Here the answer is in array length is always starts from 1 and array index start from 0.
 
 
 
