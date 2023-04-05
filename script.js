@@ -110,7 +110,22 @@ const subArray_2 = fruits.splice(1,2);
 console.log(subArray_2); 
 
 
-//Examples for array:-
+//Examples for an array:-
+//1:-
+
+const studentMarks = [70 , 50 , 55 , 85 , 65 , 90 , 95];
+console.log(studentMarks);
+console.log(studentMarks[0]);
+console.log(studentMarks[1]);
+console.log(studentMarks[2]);
+console.log(studentMarks[3]);
+console.log(studentMarks[4]);
+console.log(studentMarks[5]);
+console.log(studentMarks[6]);
+console.log(studentMarks[7]); //Undefined the index 7 does not exist.
+console.log("The length of studentmarks is ",studentMarks.length); //.length property.
+
+
 
 
 
