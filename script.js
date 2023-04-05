@@ -123,7 +123,44 @@ console.log(studentMarks[4]);
 console.log(studentMarks[5]);
 console.log(studentMarks[6]);
 console.log(studentMarks[7]); //Undefined the index 7 does not exist.
+studentMarks[7] = 100;
+console.log(studentMarks[7]); //Here the output has been changed undefined to index 7 is 100;
+
 console.log("The length of studentmarks is ",studentMarks.length); //.length property.
+studentMarks[0] = 80;
+console.log(studentMarks); //Changing the value of an array.
+console.log(typeof studentMarks); //Object.
+
+//Lets make a quiz forLoop with the help of an array:-
+//Incrementation
+for(let i = 0; i < studentMarks.length; i++)
+{
+
+    console.log(studentMarks[i]); //Total elements
+    console.log(i); //Total length
+}
+
+
+//Decrementation
+for(let i = 8; i >= 0; i--)
+{
+
+    console.log(i);
+}
+
+
+
+
+
+//Arryas are mutable.
+//Arrays can be changed.
+
+//Strings are immutable
+//Strings cannnot be changed.
+
+//An array is not a primtive type its an object and it returns as an object and the type of operator is Object.
+
+//Arrays can hold many values under in a single name.
 
 
 
