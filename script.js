@@ -280,7 +280,7 @@ console.log(arr_); //The ouput is empty or undefined of postion 1 in the console
 const cars = ["Tata","Mahindra","Hyundai","Suzuki"];
 cars.length = 4;
  let carResult = cars[3];
- console.log(`Here the result of cars is ${carResult}`);// using Template literal for better use and it works sos very well.
+ console.log(`Here is the result of cars is ${carResult}`);// using Template literal for better use and it works sos very well.
  // Here the answer is in array length is always starts from 1 and array index start from 0.
 
 
