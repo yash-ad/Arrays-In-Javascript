@@ -39,3 +39,42 @@ console.log(resultFive,nums); // 1  [2, 3, 4, 5, 9]
 
 let resultSix = nums.unshift(100); //Added element
 console.log(resultSix,nums);     // 6(Returns new length)  [100, 2, 3, 4, 5, 9] (Added element to the beginning of an array)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

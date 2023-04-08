@@ -41,17 +41,17 @@ console.log(fruits);
 
 
 ///1.Indexof() :- This method represents as searches an element of an array and returns its position.
-//In this below example here you can see in the fruits section there are two bananas element on which the postions are 2 & 5 however javascript will identify only first element to access it. 
+//In this above example here you can see in the fruits section there are two bananas element on which the postions are 2 & 5 however javascript will identify only first element to access it. 
 console.log(fruits.indexOf("Banana"));
 console.log(fruits.indexOf("Pineapple"));
 
 //In this below example here you can see in the fruits section cherry is not present as an element
 //And if element is not present the output will get -1.
-console.log(fruits.indexOf("Cherry"));
+console.log(fruits.indexOf("Cherry")); //-1
 
 
 
-///2.Includes() :- This method represents as checks if an array conatins a specified element,with the help of boolean value it returns either True or False.
+///2.Includes() :- This method represents as checks if an array contains a specified element,with the help of boolean value it returns either True or False.
 console.log(fruits.includes("Banana"));//True,yes it is available and its represents as an element. 
 console.log(fruits.includes("Chikoo"));//False,No its not since absence of an element.
 
@@ -77,7 +77,7 @@ console.log(fruits.pop());
 
 
 
-///5.Shift() :- This method shows as removes the first element of an array and returns the removed element.
+///5.Shift() :- This method shows as removes the first element of an array and returns the removed element or length.
 console.log(fruits.shift());
 console.log(fruits.shift());
 
@@ -115,20 +115,20 @@ console.log(subArray_2);
 
 const studentMarks = [70 , 50 , 55 , 85 , 65 , 90 , 95];
 console.log(studentMarks);
-console.log(studentMarks[0]);
-console.log(studentMarks[1]);
-console.log(studentMarks[2]);
-console.log(studentMarks[3]);
-console.log(studentMarks[4]);
-console.log(studentMarks[5]);
-console.log(studentMarks[6]);
+console.log(studentMarks[0]); //70
+console.log(studentMarks[1]); //50
+console.log(studentMarks[2]); //55
+console.log(studentMarks[3]); //85
+console.log(studentMarks[4]); //65
+console.log(studentMarks[5]); //90
+console.log(studentMarks[6]); //95
 console.log(studentMarks[7]); //Undefined the index 7 does not exist.
-studentMarks[7] = 100;
+studentMarks[7] = 100; //Added value
 console.log(studentMarks[7]); //Here the output has been changed undefined to index 7 is 100;
 
 console.log("The length of studentmarks is ",studentMarks.length); //.length property.
-studentMarks[0] = 80;
-console.log(studentMarks); //Changing the value of an array.
+studentMarks[0] = 80; //Changing the value of an array.
+console.log(studentMarks); //
 console.log(typeof studentMarks); //Object.
 
 //Lets make a quiz forLoop with the help of an array:-
