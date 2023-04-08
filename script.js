@@ -164,50 +164,6 @@ for(let i = 8; i >= 0; i--)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Most important quiz for interview find the differenece between Slice & Splice :-
 //1.
 const numbers = [0 , 1 , 2 , 3 , 4 ,5 ]; //Original Array
