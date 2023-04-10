@@ -61,18 +61,26 @@ console.log(moreAlphabets);//Original array does not change  //(4) ['E', 'F', '
 
 
 
-//9.Sort() :- This method is used to sort an array alphabetically;
+//9.Sort() :- This method is used to sort an array alphabetically,however we can sort the elements in an ascending order or descending order with the help of Compare function
 
 const numbers = [100,300,600,351,998];
-
-
 let sortIt = numbers.sort();
-console.log(numbers);
+console.log(numbers); //(5) [100, 300, 351, 600, 998]
 
 
+//Lets use compare function to get the result as an ascending order or descending order;
+const compareNumbers =[100,300,600,351,998]
 
 
+//Using compare function
+let  compareFn = (a, b)=> {
 
+    return b - a ;
+}
+
+
+numbers.sort(compareFn);
+console.log(compareNumbers); // (5) [100, 300, 600, 351, 998]
 
 
 
