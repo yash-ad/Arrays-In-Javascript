@@ -68,7 +68,7 @@ let sortIt = numbers.sort();
 console.log(numbers); //(5) [100, 300, 351, 600, 998]
 
 
-//Lets use compare function to get the result as an ascending order or descending order;
+//Lets use compare function to get the result as an ascending order or a descending order;
 const compareNumbers =[100,300,600,351,998]
 
 
@@ -84,7 +84,28 @@ console.log(compareNumbers); // (5) [100, 300, 600, 351, 998]
 
 
 
+//10.Reverse():-
 
+const reverseLetters = ["E","S","R","E","V","E","R"];
+
+let result = reverseLetters.reverse();
+
+console.log(reverseLetters,result); //(7) ['R', 'E', 'V', 'E', 'R', 'S', 'E']
+
+
+
+//11.Splice :- This method is used to add new items to an array however in splice we can use an arguments to add the elements , no of elements to remove and elements to be added.
+
+//Four arguments of splice are 1.Position to add , 2.NO of elements to remove , 3 and 4th is elements to be added.
+
+const numBers = [ 1, 2 , 3 , 4 , 5 , 6 , 7 , 8 ,9 , 10 ];
+
+numBers.splice(3,4,1001,1002,1003);
+
+console.log(numBers); // (9) [1, 2, 3, 1001, 1002, 1003, 8, 9,10]
+                      // 1.Added position to  index 3.
+                      // 2.No of elements to remove.
+                      // 3 & 4 th Elements to be added.
 
 
 
