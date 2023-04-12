@@ -175,8 +175,8 @@ console.log(array_One); // 1,2.
 
 
 const array_Two = numbers.splice(1,3); //Using splice
-console.log("Guess whats the output is :-",numbers); //0,4,5 which are remaining elements.
-console.log(array_Two); // 1,2,3.
+console.log("Guess whats the output is :-",numbers); //0,4,5
+console.log(array_Two); // 1,2,3.Deleted values 
 
 //2.Here you will get a difference between slice and splice:-
 const vegetables = ["Spinach","Cabbage","Tomato","Potatao","Onion","Carrot","Capsicum"]

@@ -100,12 +100,18 @@ console.log(reverseLetters,result); //(7) ['R', 'E', 'V', 'E', 'R', 'S', 'E']
 
 const numBers = [ 1, 2 , 3 , 4 , 5 , 6 , 7 , 8 ,9 , 10 ];
 
-numBers.splice(3,4,1001,1002,1003);
+let deletedValues = numBers.splice(3,4,1001,1002,1003);
 
 console.log(numBers); // (9) [1, 2, 3, 1001, 1002, 1003, 8, 9,10]
-                      // 1.Added position to  index 3.
-                      // 2.No of elements to remove.
-                      // 3 & 4 th Elements to be added.
+ // 1.Added position to  index 3. 
+ // 2.No of elements to remove. 
+ // 3 & 4 th Elements to be added.
+
+//Lets findout the deleted values of splice:-
+
+console.log(deletedValues); // (4) [4, 5, 6, 7]
+
+
 
 
 
