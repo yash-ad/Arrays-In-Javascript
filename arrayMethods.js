@@ -1,44 +1,47 @@
 //Array Methods
 
 //1.toString():- Converts an array to a string of comma seperated values;
-//typeOf string;
+
 
 const nums = [1,2,3,4,5,6];
 
 let resultOne = nums.toString();
-console.log(resultOne); //1,2,3,4,5,6
+console.log(resultOne); //1,2,3,4,5,6 //typeOf string;
 
 
 
 //2.Join():- Joins all the array elements using a seperator;
-//typeOf string;
+
 
 let resultTwo = nums.join("-");
-console.log(resultTwo);//1-2-3-4-5-6
+console.log(resultTwo); //1-2-3-4-5-6 //typeOf string;
 
 
-//3.pop():- Removes the last element of an array;
+//3.pop():- Removes the last element of an array and returns the removed element.
 
 let resultThree = nums.pop();
-console.log(resultThree);//6
+
+console.log(resultThree);//6 returns the removed element
 console.log(nums);//[1, 2, 3, 4, 5]
 
-//4.Push():- Adds a new element at the end of the array and it modifies the original array , returns the new array
+//4.Push():- Adds a new element at the end of an array and it modifies the original array with an argument , returns the new array
 
-let resultFour = nums.push(9); //Added new element to the end of an array.
-console.log(nums,resultFour); //the length and elements of an array
+let resultFour = nums.push(9); 
+//Added new element to the end of an array.
+console.log(resultFour,nums);// 6 , [1, 2, 3, 4, 5, 9]
+ //the length and elements of an array
 
 
 //5.Shift():- Removes the first element of an array and returns it.
 
 let resultFive = nums.shift();
-console.log(resultFive,nums); // 1  [2, 3, 4, 5, 9]
+console.log(resultFive,nums); // 1 , [2, 3, 4, 5, 9]
 
 
 //6.Unshift():- Adds element to the beginning of an array and returns new length
 
-let resultSix = nums.unshift(100); //Added element
-console.log(resultSix,nums);     // 6(Returns new length)  [100, 2, 3, 4, 5, 9] (Added element to the beginning of an array)
+let resultSix = nums.unshift(100); //Added element 100
+console.log(resultSix,nums);     // 6 (Returns new length) , [100, 2, 3, 4, 5, 9] (Added element to the beginning of an array)
 
 
 //7.Delete():- Delete is an operator its not a method,Array elements can be deleted using the delete operator.
@@ -46,7 +49,7 @@ console.log(resultSix,nums);     // 6(Returns new length)  [100, 2, 3, 4, 5, 9]
 const bikeNames = ["Yamaha","Honda","Suzuki","TVS","Revolt"];
 
 delete bikeNames[1]; //(5) ['Yamaha', empty, 'Suzuki', 'TVS', 'Revolt']
-console.log(bikeNames);  //Becaus eof its not a method so the legth will remainn same instead of absence value(Empty)
+console.log(bikeNames);  //Because of its not a method so the length will remain same instead of absence value(Empty)
 
 
 //8.Concat():- Used to join arrays to the given array and returns a new array however does not change an existing array.
@@ -69,18 +72,19 @@ console.log(numbers); //(5) [100, 300, 351, 600, 998]
 
 
 //Lets use compare function to get the result as an ascending order or a descending order;
-const compareNumbers =[100,300,600,351,998]
 
 
 //Using compare function
-let  compareFn = (a, b)=> {
-
-    return b - a ;
+let  compareFn = (a, b)=>{
+    
+    return a - b ;
 }
 
+let compareNumbers =[100,300,600,351,998,1001,152,134,155,109];
 
-numbers.sort(compareFn);
-console.log(compareNumbers); // (5) [100, 300, 600, 351, 998]
+compareNumbers.sort(compareFn);
+console.log(compareNumbers); // with an ascending order.
+                            // [100, 109, 134, 152, 155, 300, 351, 600, 998, 1001]
 
 
 
