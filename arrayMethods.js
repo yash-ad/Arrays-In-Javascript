@@ -88,25 +88,27 @@ console.log(compareNumbers); // with an ascending order.
 
 
 
+
 //10.Reverse():-
+
 
 const reverseLetters = ["E","S","R","E","V","E","R"];
 
-let result = reverseLetters.reverse();
+let ouTput = reverseLetters.reverse();
 
-console.log(reverseLetters,result); //(7) ['R', 'E', 'V', 'E', 'R', 'S', 'E']
+console.log(ouTput); //(7) ['R', 'E', 'V', 'E', 'R', 'S', 'E']
 
 
 
-//11.Splice :- This method is used to add new items to an array however in splice we can use an arguments to add the elements , no of elements to remove and elements to be added.
+//11.Splice :- This method is used to add new items to an array however in splice it modifies the array, we can use an arguments to add the elements , no of elements to remove and elements to be added.
 
 //Four arguments of splice are 1.Position to add , 2.NO of elements to remove , 3 and 4th is elements to be added.
 
 const numBers = [ 1, 2 , 3 , 4 , 5 , 6 , 7 , 8 ,9 , 10 ];
 
-let deletedValues = numBers.splice(3,4,1001,1002,1003);
+let deletedValues = numBers.splice(3,4,1001,1002,1003,1004);
 
-console.log(numBers); // (9) [1, 2, 3, 1001, 1002, 1003, 8, 9,10]
+console.log(numBers); // (9) [1, 2, 3, 1001, 1002, 1003, 1004, 8, 9, 10]
  // 1.Added position to  index 3. 
  // 2.No of elements to remove. 
  // 3 & 4 th Elements to be added.
@@ -114,6 +116,15 @@ console.log(numBers); // (9) [1, 2, 3, 1001, 1002, 1003, 8, 9,10]
 //Lets findout the deleted values of splice:-
 
 console.log(deletedValues); // (4) [4, 5, 6, 7]
+
+
+//12.Slice() :- This method slices out a piece from an array and it doesnot modify the original array hence it creates a new array.
+
+let fruits = ["Guava","Apple","Banana","Kiwi","Dragonfruit"];
+
+let sliceIt = fruits.slice(2,5); //In an arguments the values are inclusive and exclusive starting and  before ending  of the index.
+console.log(sliceIt);//['Banana', 'Kiwi', 'Dragonfruit'] starting from 2 index and here the 5th index is not available so 4th index value before ending exclusive is mentioned.
+
 
 
 
