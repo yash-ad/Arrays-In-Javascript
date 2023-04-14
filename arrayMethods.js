@@ -122,7 +122,7 @@ console.log(deletedValues); // (4) [4, 5, 6, 7]
 
 let fruits = ["Guava","Apple","Banana","Kiwi","Dragonfruit"];
 
-let sliceIt = fruits.slice(2,5); //In an arguments the values are inclusive and exclusive starting and  before ending  of the index.
+let sliceIt = fruits.slice(2,5); //In an arguments the values are inclusive and exclusive starting  and  before ending  of the index.
 console.log(sliceIt);//['Banana', 'Kiwi', 'Dragonfruit'] starting from 2 index and here the 5th index is not available so 4th index value before ending exclusive is mentioned.
 
 
