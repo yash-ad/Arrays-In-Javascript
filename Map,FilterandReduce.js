@@ -16,10 +16,22 @@ console.log(arr_One); // [25, 49, 57]
 
 let solve_Multiply = [ 2 , 4 , 6 , 8 ];
 
-let arr_Two = arr.map((value)=>{
+let arr_Two = solve_Multiply.map((value)=>{
 
     console.log(value);
     return value * 10
 })
 
-console.log(arr_Two); // [240, 480, 560]
+console.log(arr_Two); // [20, 40, 60, 80]
+
+
+//3.subtraction of all the values
+
+let solve_Subtraction = [ 1 , 2 , 3 , 4 , 5];
+
+let arr_Three = solve_Subtraction.map((value)=>{
+console.log(value);
+ return value - 1
+
+})
+console.log(arr_Three); //  [0, 1, 2, 3, 4]
