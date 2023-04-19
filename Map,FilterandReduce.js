@@ -53,3 +53,16 @@ return value < 10;
 })
 
 console.log(arr_Four); //  [5, 4] There are only two numbers found that are lesser than 10;
+
+
+//003.Reduce() Method :- 
+
+
+
+
+
+
+
+
+
+
