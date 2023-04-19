@@ -1,2 +1,5 @@
 # Arrays-In-Javascript
-Arrays - in - Javascript 
+Arrays
+ArrayMethods
+ArrayLoops
+Array:-Map, Filter & Reduce.
