@@ -39,6 +39,11 @@ console.log(value);
 console.log(arr_Three); //  [0, 1, 2, 3, 4]
 
 
+
+
+
+
+
 //002.Filter() Method :-
 
 //4. Lets findout the numbers that are lesser than 10 :-
@@ -55,14 +60,51 @@ return value < 10;
 console.log(arr_Four); //  [5, 4] There are only two numbers found that are lesser than 10;
 
 
+
+
+
+
 //003.Reduce() Method :- 
 
+//1.Addition by using reduce method :- 
+let newArr = [ 1 , 2 , 3 , 4 , 5 , 5 , 4 , 3 , 2 , 1 ]; //Ofcourse we can repeat the values in an array.
+//Here we can also add a function hence function can be used as a variable in javascript;
+
+const reduce_Func = (value_1,value_2) => {
+
+    return value_1 + value_2
+
+}
+
+let arr_Five = newArr.reduce (reduce_Func)
+
+console.log(arr_Five); //And it returns a single value which is 30 addition of an elements.
 
 
+//2.Multiply by using reduce method :-
+
+let newArr2 = [ 10 , 20 , 30 , 40 , 50 , 60 ];
+
+let arr_Six = newArr2.reduce((value_1,value_2)=>{
+return value_1 * value_2
+
+})
+
+console.log(arr_Six); // And it returns a single value which is 720000000 Multiplication of an elements. 
 
 
+//3. Subtraction by using reduce method :-
 
+let newArr3 = [ 101 , 405 , 303 , 505 , 339 , 447 ];
 
+const reduce_Function = (value_1,value_2) =>
+{
 
+    return value_1 - value_2
+}
+
+let arr_Seven = newArr3.reduce(reduce_Function);
+
+console.log(arr_Seven); //  And it returns a single value which is -1898 Subtraction of an elements. 
 
 
