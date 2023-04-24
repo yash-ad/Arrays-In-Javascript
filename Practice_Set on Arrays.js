@@ -23,17 +23,17 @@ console.log(numbers); // [55, 1, 2, 3, 4, 5, 6, 7, 8]
 //2.Keep adding numbers to the array from question 1 using while or do while loop with an array until 0 is added to the array:-
 
 const theNumbers = [11 , 12 , 13 , 14 , 15 , 16 ];
-let a;
-do {let userInput = prompt("Enter your number here : ");
+let userInput;
+do {a = prompt("Enter your number here : ");
 
-    userInput = Number.parseInt(user_Input);
+    a = Number.parseInt(a);
 
-theNumbers.push(userInput);
+ theNumbers.push(a);
 }
 
-while(a != 0);
+while(userInput != 0);
 
-console.log(theNumbers);
+console.log(theNumbers); // [11, 12, 13, 14, 15, 16, 11, 22, 44, 0] the last number ended with 0 with closing loop.
 
 
 
