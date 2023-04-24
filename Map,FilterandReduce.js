@@ -4,9 +4,9 @@
 //001.Map() method:-
 
 //1.Addition all the values of an array:-
-let arr = [ 24 , 48 , 56 ];
+let solve_Addition = [ 24 , 48 , 56 ];
 
-let arr_One = arr.map((value,index) => {
+let arr_one = arr.map((value,index) => {
 console.log(value,index);
  return value + 1
 }
@@ -49,7 +49,7 @@ console.log(arr_Three); //  [0, 1, 2, 3, 4]
 //4. Lets findout the numbers that are lesser than 10 :-
 let numbers = [ 99 , 70 , 40 , 20 , 30  , 5 , 4 , 50];
 
-let arr_Four = numbers.filter((value)=>{
+let createUsingFilter = numbers.filter((value)=>{
 
 console.log(value);
 return value < 10;
@@ -57,7 +57,7 @@ return value < 10;
 
 })
 
-console.log(arr_Four); //  [5, 4] There are only two numbers found that are lesser than 10;
+console.log(createUsingFilter ); //  [5, 4] There are only two numbers found that are lesser than 10;
 
 
 
@@ -103,8 +103,8 @@ const reduce_Function = (value_1,value_2) =>
     return value_1 - value_2
 }
 
-let arr_Seven = newArr3.reduce(reduce_Function);
+let reduce_Array = newArr3.reduce(reduce_Function);
 
-console.log(arr_Seven); //  And it returns a single value which is -1898 Subtraction of an elements. 
+console.log(reduce_Array); //  And it returns a single value which is -1898 Subtraction of an elements. 
 
 
