@@ -79,7 +79,7 @@ console.log(arrSquare); // 100 , 400 ,900 , 1600 , 2500 , 3600
 
 //5.Using reduce to calculate factorial of a given number from an array here we can multiply(Because reduce returns a value) :-
 
-const newArray = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10];
+const Array = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10];
 
 const reduceFunc =  newArray.reduce((value1 , value2)=>{
 
