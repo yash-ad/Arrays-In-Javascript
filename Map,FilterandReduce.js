@@ -6,7 +6,7 @@
 //1.Addition all the values of an array:-
 let solve_Addition = [ 24 , 48 , 56 ];
 
-let arr_one = arr.map((value,index) => {
+let arr_One = arr.map((value,index) => {
 console.log(value,index);
  return value + 1
 }

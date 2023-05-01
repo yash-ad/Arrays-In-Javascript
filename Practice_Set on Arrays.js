@@ -20,6 +20,9 @@ numbers.unshift(user_Input) //Add the element to the beginning of an array
 
 
 
+
+
+
  //2.Keep adding numbers to the array from question 1 using while or do while loop with an array until 0 is added to the array:-
 
  const theNumbers = [11 , 12 , 13 , 14 , 15 , 16 ];
@@ -33,6 +36,9 @@ let a;
 
 while( a!== 0);   // The strict inequality (!==) operator checks whether its two operands are not equal, Zero is the only number that evaluates to falsy
  console.log(theNumbers); // [11, 12, 13, 14, 15, 16, 11, 22, 44, 0] the last number ended with 0 with closing loop.
+
+
+
 
 
 
@@ -55,3 +61,30 @@ console.log(usingFilterFn); // (9) [40, 50, 200, 120, 350, 460, 500, 80, 90]
 
 
 
+
+
+
+//4.Create an array of square of given numbers (Using Map method because it returns an array) (Square that means multiply here)  :-
+
+const array = [ 10 , 20 , 30 , 40 , 50 , 60 ];
+
+const arrSquare = array.map((value)=>{
+
+    return value * value 
+})
+
+console.log(arrSquare); // 100 , 400 ,900 , 1600 , 2500 , 3600 
+
+
+
+//5.Using reduce to calculate factorial of a given number from an array here we can multiply(Because reduce returns a value) :-
+
+const newArray = [ 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10];
+
+const reduceFunc =  newArray.reduce((value1 , value2)=>{
+
+return value1  * value2
+
+})
+
+console.log(reduceFunc); // 3628800
