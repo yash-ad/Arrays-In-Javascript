@@ -22,11 +22,11 @@ It does NOT define a constant array. It defines a constant reference to an array
 
 Because of this, we can still change the elements of a constant array.*/
 //Example is below:-
-const newArray = myArray;
+const arr = myArray;
 
-newArray[10] = "God";
+arr[10] = "God";
 console.log(myArray);
-console.log(newArray);
+console.log(arr);
 
 
 

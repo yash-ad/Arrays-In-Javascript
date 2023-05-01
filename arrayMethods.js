@@ -80,16 +80,16 @@ let  compareFn = (a, b)=>{
     return a - b ;
 }
 
-let compareNumbers =[100,300,600,351,998,1001,152,134,155,109];
+let Numbers =[100,300,600,351,998,1001,152,134,155,109];
 
-compareNumbers.sort(compareFn);
-console.log(compareNumbers); // with an ascending order.
+Numbers.sort(compareFn);
+console.log(Numbers); // with an ascending order.
                             // [100, 109, 134, 152, 155, 300, 351, 600, 998, 1001]
 
 
 
 
-//10.Reverse():-
+//10.Reverse():- The reverse () method reverses the order of the elements in an array. and the reverse () method overwrites the original array.
 
 
 const reverseLetters = ["E","S","R","E","V","E","R"];
