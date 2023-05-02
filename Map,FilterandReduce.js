@@ -2,7 +2,7 @@
   
 
 //001.Map() method:-
-
+//Map () Transfroms every element in an array individually to creates a new array
 //1.Addition all the values of an array:-
 let solve_Addition = [ 24 , 48 , 56 ];
 
@@ -39,12 +39,24 @@ console.log(value);
 console.log(arr_Three); //  [0, 1, 2, 3, 4]
 
 
+//Map() example:-
+
+const arry = [1,2,3,4,5];
+
+const result = arry.map((value)=>{
+return value * 2
+
+})
+
+console.log(result); //(5) [2, 4, 6, 8, 10]
+//Map() Array function =  it transforms individually all element of an array to create a new array and it doesnot change an original array. 
 
 
 
 
 
 //002.Filter() Method :-
+//Filter removes an elements that are not required which is not necessary while creating a new array.and only includes which are needed.
 
 //4. Lets findout the numbers that are lesser than 10 :-
 let numbers = [ 99 , 70 , 40 , 20 , 30  , 5 , 4 , 50];
@@ -58,7 +70,6 @@ return value < 10;
 })
 
 console.log(createUsingFilter ); //  [5, 4] There are only two numbers found that are lesser than 10;
-
 
 
 
