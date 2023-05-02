@@ -37,7 +37,7 @@ let numBers = [ 101 , 102 , 103 , 104 , 105 ];
 
 for(let i in numBers)
 {
-    console.log(i); //If I will print only i in the log the output is from index 0 1 2 3 4 whuch are keys of an array
+    console.log(i); //If I will print only i in the log the output is from index 0 1 2 3 4 which are keys of an array
 
     console.log(numBers[i]); // now it will print an elements 101 , 102 , 103 , 104 , 105 ;
 }

@@ -6,8 +6,8 @@
 //1.Addition all the values of an array:-
 let solve_Addition = [ 24 , 48 , 56 ];
 
-let arr_One = arr.map((value,index) => {
-console.log(value,index);
+let arr_One = solve_Addition.map((value,index) => {
+
  return value + 1
 }
 )
@@ -20,7 +20,7 @@ let solve_Multiply = [ 2 , 4 , 6 , 8 ];
 
 let arr_Two = solve_Multiply.map((value)=>{
 
-    console.log(value);
+
     return value * 10
 })
 
@@ -67,7 +67,7 @@ console.log(createUsingFilter ); //  [5, 4] There are only two numbers found th
 //003.Reduce() Method :- 
 
 //1.Addition by using reduce method :- 
-let newArr = [ 1 , 2 , 3 , 4 , 5 , 5 , 4 , 3 , 2 , 1 ]; //Ofcourse we can repeat the values in an array.
+let Arr = [ 1 , 2 , 3 , 4 , 5 , 5 , 4 , 3 , 2 , 1 ]; //Ofcourse we can repeat the values in an array.
 //Here we can also add a function hence function can be used as a variable in javascript;
 
 const reduce_Func = (value_1,value_2) => {
@@ -76,7 +76,7 @@ const reduce_Func = (value_1,value_2) => {
 
 }
 
-let arr_Five = newArr.reduce (reduce_Func)
+let arr_Five = Arr.reduce (reduce_Func)
 
 console.log(arr_Five); //And it returns a single value which is 30 addition of an elements.
 

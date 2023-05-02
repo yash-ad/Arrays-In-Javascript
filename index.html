@@ -7,8 +7,9 @@
     <title>Arrays-In-Js</title>
 </head>
 <body>
+    <div>
     <h1>Arrays-In-Javascript</h1>
-
+<div>
     <h2>What is an Array?</h2>
 
     <p>
@@ -52,17 +53,17 @@ console.log(array);
 
 
 </ul>
+</div>
 
-
-
+<div>
 <h2>Array Properties and Methods :- </h2>
 <p>The real strength of Javascript arrays are the built in array properties and methods :- 
     <ol>
-        <li>1.toString():>
+        <li>toString():>
             Converts an array to a string of comma seperated values.
         </li>
     
-        <li>2.Join():>
+        <li>Join():>
             Joins all the array elements using a seperator.
 
         </li>
@@ -112,28 +113,94 @@ console.log(array);
 
 
         <li>Slice():>
-         Slices out a piece from an array it creates a new array and it doesnot modify the original array.
+         Slices out a piece from an array it creates a new array and it does not modify the original array.
         </li>
 
 
 
     </ol>
+</div>
 
-<h1>Looping through arrays:-</h1>
+<div>
+<h2>Looping through arrays:-</h2>
+
 <p>Arrays can be looped through using the classical javascript Forloop or through some other methods below</p>
+<ol>
+    <li>ForEachloop:-
+        Calls a function, once for each array elements and the forEach() method is not executed for empty elements.
+        Lets take an example:- 
+        Const numbers = [ 1,2,3,4,5];
+        numbers.forEach((value,index,array)=>{
+//Function logic
+        })
+
+        There are 3 arguments which function takes 1.The item values,2.The item index,3.The array itself.
+    </li>
+<br>
+    <li>forOfloop:-
+        The javascript forOf statement loops through the values of an iterable object.and it lets you loop over iterable data structures such as Arrays,Strings,Maps,Nodelists and more.
+        Lets have a look at Syntax:-
+        for(Variable of Iterable){
+
+            //Code block to be executed.
+        }
+        *Variable:-For every iteration the value of the next property is assigned to the variable.
+        *Iterable:-An object that has iterable properties.
+    </li>
+<br>
+     <li>forInloop:-
+        The javascript forIn statement loops through the properties of an object:>
+        for(Key In Object){
+
+            //Code block to be executed.
+        }
+        In javascript the forIn statement can also loop over the properties of an array.
+     </li>
 
 
-
-
-
-
-
-
-
-
-
+</ol>
 
 </p>
+</div>
+<div class="Map , Filter and Reduce">
+    <h2>Map,Filter and Reduce methods in Javascript</h2>
+    <ol>
+        <li>Map():>
+        <p>creates a new array by performing some operation on each array element and Map doesnot change the original array.
+           and It returns an array.
+       *Parameters:- 
+       1.Function = Required to be run for each array element.
+       2.Currentvalue = Required The value of the current element.
+       3.Index = The index of the current element its an optional.
+       4.arr = The array of the current element its an optional.
+       *Return Value = The results of a function for each array element.
+
+        </p>
+    </li>
+
+
+    <li>Filter():>
+<p>        Filters an array with value that passes a test,creates a new array and the filter method doesnot change the original array , it returns an array.
+    *Parameters:- 
+    1.Function = Required to be run for each array element.
+    2.Currentvalue = Required The value of the current element.
+    3.Index = The index of the current element its an optional.
+    4.arr = The array of the current element its an optional.
+    *Return Value = The results of a function for each array element.</p>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ol>
 
 
 
@@ -179,8 +246,8 @@ console.log(array);
 
 
 
-
-
+</div>
+</div>
 
  <script src="./Practice_Set on Arrays.js"></script>   
 </body>
