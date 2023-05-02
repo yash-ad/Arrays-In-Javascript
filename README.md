@@ -2,4 +2,4 @@
 Arrays
 ArrayMethods
 ArrayLoops
-Array:-Map, Filter & Reduce.
+ArrayFunctions:-Map, Filter & Reduce.
